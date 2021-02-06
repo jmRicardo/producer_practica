@@ -1,0 +1,38 @@
+# Configuración del puerto.
+server:
+  port: 8081
+  
+# Configuración de consola
+logging:
+  pattern:
+    dateformat: hh:mm:ss
+  level:
+    org:
+      hibernate: 
+        SQL: DEBUG
+      type:
+          descriptor:
+            sql: 
+              BasicBinder: TRACE
+              
+# Configuraciones de Spring.
+spring:
+  main:
+    banner-mode: off # Quita el banner de Spring al ejecutar la consola
+
+  # JPA
+  jpa:
+    hibernate:
+      ddl-auto: update
+    
+    # Configuración para mostrar el SQL que se está ejecutando
+    properties:
+      hibernate:
+      dialect: org.hibernate.dialect.MySQL5InnoDBDialect 
+      format_sql: true
+
+  # Base de Datos
+  datasource:
+    url: jdbc:mysql://127.0.0.1:4000/music?reconnect=true
+    username: root
+    password: password
