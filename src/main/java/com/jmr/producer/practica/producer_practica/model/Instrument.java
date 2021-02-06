@@ -1,19 +1,22 @@
 package com.jmr.producer.practica.producer_practica.model;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 
 @Entity
 public abstract class Instrument {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private long id;
+    @Column(name = "id")
+    private Long id;
 
+    @Column(name = "name")
     private String name;
+
+    @Column(name = "strings")
     private int strings;
+
+    @Column(name = "length")
     private float length;
 
     public String getName() {
@@ -30,14 +33,6 @@ public abstract class Instrument {
 
     public void setStrings(int strings) {
         this.strings = strings;
-    }
-
-    public long getId() {
-        return id;
-    }
-
-    public void setId(long id) {
-        this.id = id;
     }
 
     public float getLength() {

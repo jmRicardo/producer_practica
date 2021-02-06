@@ -1,5 +1,8 @@
 package com.jmr.producer.practica.producer_practica.controller;
 
+import com.jmr.producer.practica.producer_practica.model.Bass;
+import com.jmr.producer.practica.producer_practica.repository.BassRepository;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -8,7 +11,7 @@ import java.util.List;
 @RequestMapping("/api")
 public class TestController {
 
-   /* @Autowired
+    @Autowired
     BassRepository bassRepository;
 
     @GetMapping("/test")
@@ -21,13 +24,9 @@ public class TestController {
     public List<Bass> getAll()
     {
         return bassRepository.findAll();
+
     }
 
-    @GetMapping("test/{name}/{last}")
-    public String test(@PathVariable("name") String name, @PathVariable("last") String last)
-    {
-        return name + last;
-    }*/
 
 
 }
