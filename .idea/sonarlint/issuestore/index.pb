@@ -1,24 +1,4 @@
 
-à
-Xsrc/main/java/com/jmr/producer/practica/producer_practica/controller/TestController.java,5\0\508cf99e5841d880de7d2d4405e3755d1c3f4b1a
-z
-Jsrc/main/java/com/jmr/producer/practica/producer_practica/model/Banjo.java,9\6\96f64da0fdc3f0042b28dad31c7e12eefd6ef03b
-y
-Isrc/main/java/com/jmr/producer/practica/producer_practica/model/Bass.java,e\b\eb2aba79c3c9a6f861d7647bf544008cbfbffd50
-}
-Msrc/main/java/com/jmr/producer/practica/producer_practica/model/Greeting.java,2\0\20cf3b77e9a8988d0fb402299d4f0f4cad276410
-{
-Ksrc/main/java/com/jmr/producer/practica/producer_practica/model/Guitar.java,9\e\9e68d2dd6bbde8a70e8131e57ac1db3c9f92a249
-
-Osrc/main/java/com/jmr/producer/practica/producer_practica/model/Instrument.java,7\3\730e409f22a4fcd7cbafa6c3601d48b218dd5582
-â
-Ysrc/main/java/com/jmr/producer/practica/producer_practica/repository/BanjoRepository.java,3\9\39ac85d3541d4584057a28b87fdc618c08f9a09b
-à
-Xsrc/main/java/com/jmr/producer/practica/producer_practica/repository/BaseRepository.java,4\3\432c730aa28b88871e10b818b3bbd6282799f896
-à
-Xsrc/main/java/com/jmr/producer/practica/producer_practica/repository/BassRepository.java,9\1\91fb7edf3a4070008b4dbf55660fdb0e77d95c85
-ä
-Zsrc/main/java/com/jmr/producer/practica/producer_practica/repository/GuitarRepository.java,f\a\fa4fefca9c18e25cfbd36426e7f4dee6ec387f62
 ä
 Zsrc/main/java/com/jmr/producer/practica/producer_practica/ProducerPracticaApplication.java,0\d\0d9289d482bdae92699435f92185d44d4fcfc493
 è

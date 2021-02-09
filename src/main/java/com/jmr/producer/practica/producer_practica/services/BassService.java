@@ -7,6 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Optional;
 
 @Service
 public class BassService {
@@ -24,19 +25,18 @@ public class BassService {
         return bassRepository.findAll();
     }
 
-    public void addBass(Bass bass)
-    {
-        bassRepository.save(bass);
-    }
-
-    public Bass save(Bass bass)
+    public Bass addBass(Bass bass)
     {
         return bassRepository.save(bass);
     }
 
-    public Bass findById(long id) throws BassNotFoundException
+    public Bass findById(long id)
     {
-        return bassRepository.findById(id).orElseThrow( ()-> new BassNotFoundException("Ese Bajo no existe con el id: " + id));
+        Optional<Bass> bass = this.bassRepository.findById(id);
+        if (bass.isPresent()) {
+            return bass.get();
+        }
+        throw new BassNotFoundException("El Bajo con el id = " + id + " no existe!");
     }
 
 

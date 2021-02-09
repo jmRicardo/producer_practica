@@ -4,6 +4,7 @@ package com.jmr.producer.practica.producer_practica.controllers;
 import com.jmr.producer.practica.producer_practica.exceptions.BassNotFoundException;
 import com.jmr.producer.practica.producer_practica.models.Bass;
 import com.jmr.producer.practica.producer_practica.services.BassService;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -16,6 +17,7 @@ import java.util.Optional;
 
 @RestController
 @RequestMapping("/api")
+@Slf4j
 public class BassController {
 
     private final BassService bassService;
@@ -32,7 +34,7 @@ public class BassController {
 
     @PostMapping
     public ResponseEntity<Bass> addBass(@RequestBody Bass bassModel) {
-        Bass bass = this.bassService.save(bassModel);
+        Bass bass = this.bassService.addBass(bassModel);
         URI location = ServletUriComponentsBuilder.fromCurrentRequest().path("/{id}").buildAndExpand(bass.getId()).toUri();
         return ResponseEntity.created(location).body(bass);
     }
