@@ -1,4 +1,4 @@
-package com.jmr.producer.practica.producer_practica.model;
+package com.jmr.producer.practica.producer_practica.models;
 
 
 import javax.persistence.*;

@@ -1,6 +1,6 @@
-package com.jmr.producer.practica.producer_practica.repository;
+package com.jmr.producer.practica.producer_practica.repositories;
 
-import com.jmr.producer.practica.producer_practica.model.Instrument;
+import com.jmr.producer.practica.producer_practica.models.Instrument;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.repository.NoRepositoryBean;
 

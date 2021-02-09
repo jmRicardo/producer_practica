@@ -1,9 +1,8 @@
-package com.jmr.producer.practica.producer_practica.controller;
+package com.jmr.producer.practica.producer_practica.controllers;
 
-import com.jmr.producer.practica.producer_practica.model.Bass;
-import com.jmr.producer.practica.producer_practica.model.Instrument;
-import com.jmr.producer.practica.producer_practica.repository.BaseRepository;
-import com.jmr.producer.practica.producer_practica.repository.BassRepository;
+import com.jmr.producer.practica.producer_practica.models.Bass;
+import com.jmr.producer.practica.producer_practica.repositories.BaseRepository;
+import com.jmr.producer.practica.producer_practica.repositories.BassRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
