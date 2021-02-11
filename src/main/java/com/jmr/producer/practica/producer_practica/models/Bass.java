@@ -3,7 +3,7 @@ package com.jmr.producer.practica.producer_practica.models;
 
 import lombok.ToString;
 
-import javax.persistence.*;
+import javax.persistence.Entity;
 
 @Entity
 @ToString
